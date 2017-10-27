@@ -1,0 +1,48 @@
+Modele :
+
+	Choisir un mot :
+	
+		choisir un nombre
+		lire word.text ligne après ligne
+		une fois arriver à la ligne
+		enregistrer le mot dans motSecret	
+	
+Vue :
+
+	afficher les cases dans nouveau
+
+Controller :
+
+	demander un pseudo
+	écouter le clavier
+	désactiver la lettre choisie
+
+	si la lettre choisie est dans le mot, 
+		on l'affiche
+	
+	sinon
+		on change l'image +1
+		on incrémente le nombre d'erreur
+
+	si l'image est égale à 8.
+		on affiche le mot
+		on affiche un message game over
+		on recommence
+	
+	si le mot est égale au mot choisi
+		
+		Vue :
+			on affiche le mot
+			on affiche un message bravo
+			on incrémente le nombre de mot trouvé
+			on ajoute les points au total
+			
+			Modele : 
+				on met à jour le fichier score (Observable : Score)
+				
+				Vue :
+					on affiche les scores (Observater : Score)
+				
+			on recommence
+	
+	
